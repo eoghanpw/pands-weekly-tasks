@@ -4,7 +4,7 @@
 # ref: https://www.w3schools.com/python/python_conditions.asp
 # assumptions:
 #   1. If account number is one digit in length output will be X.
-#   2. If length of account number greater than 1 and less than 8 digits, program will replace at least half of first digits with X.
+#   2. If length of account number greater than 1 and less than 8 digits, program will replace at least half of first digits with X.(half for even, rounded up for odd)
 #   3. If length of account 8 digits or more, program will replace all but last four digits with X.
 
 
