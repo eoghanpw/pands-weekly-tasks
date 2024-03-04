@@ -6,6 +6,7 @@
 
 # ref1: https://www.youtube.com/watch?v=FpOEx6zFf1o
 # ref2: https://www.w3schools.com/python/python_functions.asp
+# ref3: https://www.w3schools.com/python/python_for_loops.asp
 
 # author: eoghan walsh
 
@@ -17,4 +18,5 @@ def sqrt():
         approx_sqrt = (((number / approx_sqrt) + approx_sqrt) / 2)
     print(f"The square root of {number} is approx. {approx_sqrt}")
 
+# call function
 sqrt()
