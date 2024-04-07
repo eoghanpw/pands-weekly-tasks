@@ -1,7 +1,7 @@
 # Weekly Task 2: bank.py
 
-This program prompts the user and reads in two money amounts (in cent),
-and then prints out the sum of the two numbers in euro and cent.
+This program prompts the user to input two money amounts (in cent),
+and then outputs the sum of the two numbers in euro and cent.
 
 ## References
 

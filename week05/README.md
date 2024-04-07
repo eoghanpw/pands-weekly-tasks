@@ -1,6 +1,6 @@
 # Weekly Task 5: weekday.py
 
-Program that outputs the whether or not today is a weekday.
+This program outputs the whether or not today is a weekday.
 
 If today is a Saturday or Sunday the program outputs:
 
