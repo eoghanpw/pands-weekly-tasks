@@ -1,46 +1,43 @@
-# plottask.py
-#
-# program that displays a histogram of a normal distribution 
-#   of 1000 values with a mean of 5 and standard deviation of 2, 
-#   and a plot of the function h(x)=x^3 in the range 0 to 10, 
-#   on the one set of axes.
-#
-# author: eoghan walsh
-#
-# references: 
-# https://www.w3schools.com/python/matplotlib_histograms.asp
-# https://www.w3schools.com/python/numpy/numpy_random_normal.asp
-# https://matplotlib.org/stable/users/explain/text/text_intro.html#text-intro
+# Weekly Task 8: plottask.py
+# Program that displays a histogram of a normal distribution
+# of 1000 values with a mean of 5 and standard deviation of 2,
+# and a plot of the function h(x)=x^3 in the range 0 to 10,
+# on the one set of axes.
+# Author: Eoghan Walsh
 
-# import numpy and matplotlib
+# Import numpy and matplotlib.
 import numpy as np
 import matplotlib.pyplot as plt
 
-# set normal distribution parameters
-hist_mean =  5
+# Set normal distribution parameters.
+hist_mean = 5
 hist_std_dev = 2
 hist_size = 1000
 
-# use numpy random.normal() to generate normal data distribution
+# Use numpy random.normal() to generate normal data distribution.
 norm_dist = np.random.normal(hist_mean, hist_std_dev, hist_size)
 
-# set range for x
+# Set range for x.
 x_range_low = 0
 x_range_high = 10
 
-# use numpy to generate array for x
-x = np.array(range(0,10))
+# Use numpy to generate array for x.
+x = np.array(range(x_range_low, x_range_high))
 
-# h(x) = x^3
+# X cubed function: h(x) = x^3
 x_cubed = x * x * x
 
-# plot histogram of normal distribution and add label
-plt.hist(norm_dist, label = "Normal Distribution")
-# plot x cubed and add label
-plt.plot(x, x_cubed, label = "$h(x)=x^3$")
-# add legend to plot
+# Plot histogram of normal distribution and add label.
+plt.hist(norm_dist, label="Normal Distribution")
+
+# Plot x cubed function and add label.
+plt.plot(x, x_cubed, label="$h(x)=x^3$")
+
+# Add legend to plot
 plt.legend()
-# add title to plot
+
+# Add title to plot
 plt.title("Weekly Task 8: plottask.py")
-# show the plot
+
+# Show the plot
 plt.show()
