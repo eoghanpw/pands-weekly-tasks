@@ -30,7 +30,7 @@ secure_short_ac_number = f"{short_x}{short_ac_number}"
 
 secure_long_ac_number = f"{long_x}{long_ac_number}"
 
-
+# Print secure account number based on length.
 if length_ac_number == 1:
     print("X")
 
