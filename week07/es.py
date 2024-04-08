@@ -12,7 +12,7 @@ import os.path
 # Filename can be input on command line.
 try:
     FILENAME = sys.argv[1]
-except:
+except IndexError:
     print("Please enter filename.")
     sys.exit(1)
 
